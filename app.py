@@ -22,15 +22,19 @@ with col2:
     petal_l = st.slider('Petal lenght (cm)', 1.0, 7.0, 0.5)
     petal_w = st.slider('Petal width (cm)', 0.1, 2.5, 0.5)
 
-st.text('')
+
+species = ''
 if st.button("Predict type of Iris"):
     result = predict(
         np.array([[sepal_l, sepal_w, petal_l, petal_w]]))
-    st.text(result[0])
-
-
-st.text('')
-st.text('')
+   if (result[0]==0):
+        species = 'Iris-setosa'
+    else if (result[0] == 1):
+   species = 'Iris-versicolor'
+        else:
+          species = 'Iris-virginica'
+        
+    st.success(species)
 st.markdown(
     '`Create by` [santiviquez](https://twitter.com/santiviquez) | \
          `Code:` [GitHub](https://github.com/santiviquez/iris-streamlit)')
