@@ -31,7 +31,7 @@ if st.button("Predict type of Iris"):
 
 st.text('Iris-setosa')
 st.text('Iris-versicolor')
-st.text('Iris-versicolor')
+st.text('Iris-virginica')
 st.markdown(
     '`Create by` [Dawit Shibabaw](https://www.linkedin.com/in/dawit-shibabaw-3a0a98190/) |\
          `Code:` [GitHub](https://github.com/dawitemu1/iris_app.py/tree/main)')
