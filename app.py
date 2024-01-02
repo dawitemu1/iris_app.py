@@ -4,7 +4,7 @@ import numpy as np
 from prediction import predict
 
 
-st.title('Classifying Iris Flowers Using Streamlit')
+st.title('Classifying Iris Flowers')
 st.markdown('Toy model to play to classify iris flowers into \
      (setosa, versicolor, virginica) based on their sepal/petal \
     and length/width.')
@@ -25,13 +25,12 @@ with col2:
 st.text('')
 if st.button("Predict type of Iris"):
     result = predict(
-        np.array([[Iris-setosa, Iris-versicolor, Iris-virginica]]))
-    st.text(result[1, -1])
+        np.array([[sepal_l, sepal_w, petal_l, petal_w]]))
+    st.text(result[0])
 
 
-st.text('')
 st.text('')
 st.text('')
 st.markdown(
-    '`Create by` [Dawit Shibabaw](https://www.linkedin.com/in/dawit-shibabaw-3a0a98190/) |\
-         `Code:` [GitHub](https://github.com/dawitemu1/iris_app.py/tree/main)')
+    '`Create by` [santiviquez](https://twitter.com/santiviquez) | \
+         `Code:` [GitHub](https://github.com/santiviquez/iris-streamlit)')
