@@ -31,7 +31,7 @@ if st.button("Predict type of Iris"):
          species = 'Iris-setosa'
    else if (result[0] == 1):
           species = 'Iris-versicolor'
-    else:
+   else:
           species = 'Iris-virginica'
         
     st.success(species)
