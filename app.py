@@ -27,9 +27,9 @@ if st.button("Predict type of Iris"):
     result = predict(
          np.array([[sepal_l, sepal_w, petal_l, petal_w]]))
      
-    if (result[0]== 0):
+    if (result== 0):
          species = 'Iris-setosa'
-    elif (result[1] == 1):
+    elif (result == 1):
           species = 'Iris-versicolor'
     else:
           species = 'Iris-virginica'
